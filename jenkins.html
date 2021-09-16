@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--========== BOX ICONS ==========-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles1.css">
+
+    <title>Infra</title>
+</head>
+
+<body>
+    <!--========== HEADER ==========-->
+    <header class="header">
+        <div class="header__container">
+
+            <a href="#" class="header__logo">Jenkins</a>
+
+            <div class="header__toggle">
+                <i class='bx bx-menu' id="header-toggle"></i>
+            </div>
+        </div>
+    </header>
+
+    <!--========== NAV ==========-->
+    <div class="nav" id="navbar">
+        <nav class="nav__container">
+            <div>
+                <a href="index.html" class="nav__link nav__logo">
+                    <i class='bx bxs-disc nav__icon'></i>
+                    <span class="nav__logo-name">Home</span>
+                </a>
+
+                <div class="nav__list">
+
+                    <div class="nav__items">
+                        <h3 class="nav__subtitle">Menu</h3>
+
+                        <div class="nav__dropdown">
+                            <a href="#" class="nav__link">
+                                <i class='bx bx-caret-down-square nav__icon'></i>
+                                <span class="nav__name">Applist</span>
+                                <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                            </a>
+
+                            <div class="nav__dropdown-collapse">
+                                <div class="nav__dropdown-content">
+                                    <a href="arifactory.html" class="nav__dropdown-item">Artifactory</a>
+                                    <a href="bamboo.html" class="nav__dropdown-item">Bamboo</a>
+                                    <a href="bitbucket.html" class="nav__dropdown-item">Bitbucket</a>
+                                    <a href="confluence.html" class="nav__dropdown-item">Confluence</a>
+                                    <a href="grafana.html" class="nav__dropdown-item">Grafana</a>
+                                    <a href="jenkins.html" class="nav__dropdown-item">Jenkins</a>
+                                    <a href="jira.html" class="nav__dropdown-item">Jira</a>
+                                    <a href="prometheus.html" class="nav__dropdown-item">Prometheus</a>
+                                    <a href="sonarqube.html" class="nav__dropdown-item">SonarQube</a>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bxs-contact nav__icon'></i>
+                            <span class="nav__name">Contact</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--========== CONTENTS ==========-->
+    <main>
+        <section>
+            <!--========== CURRENT VERSION ==========-->
+            <div class="label">Current Version:</div>
+            <table class="tb1">
+                <tr>
+                    <td>Bitbucket GCP Prod: 8.xxx</td>
+                </tr>
+                <tr>
+                    <td>Bitbucket DC Prod: 8.xxx</td>
+                </tr>
+            </table>
+
+            <!--========== LATEST VERSION ==========-->
+            <table>
+                <td class="td1">Latest version:</td>
+                <td class="td2">9.xxx</td>
+            </table>
+
+            <!--========== RELEASE VERSION ==========-->
+            <table>
+                <td class="td1">Release Notes:</td>
+                <td class="td2">http://link.com</td>
+            </table>
+
+            <!--========== CVE ==========-->
+            <div class="label">Common Vulnerabilities and Exponsure:</div>
+            <table class="tb1">
+                <tr>
+                    <td>Line1</td>
+                </tr>
+                <tr>
+                    <td>Line2</td>
+                </tr>
+                <tr>
+                    <td>Line3</td>
+                </tr>
+                <tr>
+                    <td>Line4</td>
+                </tr>
+            </table>
+
+            <!--========== CVE LINK ==========-->
+            <table>
+                <td class="td1">Link:</td>
+                <td class="td2">http://link.com</td>
+            </table>
+
+            <!--========== STATUS ==========-->
+            <div class="label">Status:</div>
+            <input type="text" class="input-status" id="status" placeholder="masukkan status aplikasi"></input><br><br>
+            <button onclick="fn1()" type="button" class="button edit" id="edit">Edit</button>
+            <button onclick="fn1()" type="button" class="button hapus" id="hapus">Submit</button>
+        </section>
+    </main>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
